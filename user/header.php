@@ -265,11 +265,19 @@ require("../connect.php");
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
+              <a class="dropdown-item d-flex align-items-center" href="./signout.php">
                 <i class="bi bi-box-arrow-right"></i>
                 <span>Sign Out</span>
               </a>
             </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-trash"></i>
+                <span>Delete your account</span>
+              </a>
+            </li>
+
 
           </ul><!-- End Profile Dropdown Items -->
         </li><!-- End Profile Nav -->
@@ -477,12 +485,7 @@ require("../connect.php");
         </a>
       </li><!-- End F.A.Q Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-contact.html">
-          <i class="bi bi-envelope"></i>
-          <span>Contact</span>
-        </a>
-      </li><!-- End Contact Page Nav -->
+     
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="pages-register.html">
@@ -493,17 +496,24 @@ require("../connect.php");
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="pages-login.html">
-          <i class="bi bi-box-arrow-in-right"></i>
-          <span>Log Out</span>
+        <i class="bi bi-envelope"></i>
+          <span>Notification</span>
         </a>
-      </li><!-- End Login Page Nav 
+      </li><!-- End Login Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-error-404.html">
-          <i class="bi bi-dash-circle"></i>
-          <span>Error 404</span>
+        <a class="nav-link collapsed" href=./contact.php>
+        <i class="bi bi-telephone"></i>
+          <span>Contact</span>
         </a>
-      </li><!-- End Error 404 Page Nav 
+      </li><!-- End Error 404 Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href=./complaint.php>
+          <i class="bi bi-envelope"></i>
+          <span>Complaint</span>
+        </a>
+      </li><!-- End Contact Page Nav
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="pages-blank.html">
