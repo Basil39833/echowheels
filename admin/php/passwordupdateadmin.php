@@ -6,9 +6,10 @@
   <script type="text/javascript" src="swal/sweetalert2@11.js"></script>
 </head>
 
+
 <body>
 <?php
-require '../connect.php';
+require '../../connect.php';
 session_start();
 $email_id=$_SESSION['email_id'];
 $currentpass=$_POST['cpass'];
@@ -23,15 +24,15 @@ if ($row['password'] == $currentpass)
 {
    if($newpass==$renewpass)
    {
-    $sql2="UPDATE login SET password='$newpass' where email_id='$email_id' ";
-    update_data($sql2);
+    $sql="UPDATE login SET password='$newpass' where email_id='$email_id' ";
+    update_data($sql);
     ?>
     <script>
           Swal.fire({
             icon: 'success',
-            text: 'User Password updated',
+            text: 'Admin Password updated',
             didClose: () => {
-              window.location.replace('../user/profile.php');
+              window.location.replace('../index.php');
             }
           });
           </script>
@@ -45,7 +46,7 @@ if ($row['password'] == $currentpass)
               icon: 'error',
               text: 'Password updation failed !',
               didClose: () => {
-                window.location.replace('../user/profile.php');
+                window.location.replace('../passwordadmin.php');
               }
             });
           </script>
@@ -59,7 +60,7 @@ else{
               icon: 'error',
               text: 'Password updation failed !',
               didClose: () => {
-                window.location.replace('../user/profile.php');
+                window.location.replace('../passwordadmin.php');
               }
             });
           </script>

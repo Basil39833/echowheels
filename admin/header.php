@@ -269,6 +269,13 @@ require("../connect.php");
               </a>
             </li>
 
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="./passwordadmin.php">
+                <i class="bi bi-lock"></i>
+                <span>Change Password</span>
+              </a>
+            </li>
+
           </ul><!-- End Profile Dropdown Items -->
         </li><!-- End Profile Nav -->
 
