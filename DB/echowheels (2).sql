@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 22, 2023 at 12:11 PM
+-- Generation Time: Sep 24, 2023 at 09:27 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `complaint` (
   `complaint_id` int(40) NOT NULL,
   `title` varchar(40) NOT NULL,
-  `descreption` varchar(200) NOT NULL,
+  `description` varchar(200) NOT NULL,
   `type` varchar(10) NOT NULL,
   `date` date NOT NULL,
   `email_id` varchar(50) NOT NULL,
@@ -93,6 +93,25 @@ INSERT INTO `login` (`email_id`, `password`, `user_type`, `user_status`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `product`
+--
+
+CREATE TABLE `product` (
+  `product_id` int(40) NOT NULL,
+  `image` varchar(50) NOT NULL DEFAULT 'default.jpg',
+  `scooter_name` varchar(50) NOT NULL,
+  `scooter_category` varchar(50) NOT NULL,
+  `scooter_model_year` varchar(50) NOT NULL,
+  `scooter_brand` varchar(50) NOT NULL,
+  `scooter_plate_number` varchar(50) NOT NULL,
+  `color` varchar(50) NOT NULL,
+  `description` varchar(50) NOT NULL,
+  `amount` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `registration`
 --
 
@@ -115,7 +134,7 @@ CREATE TABLE `registration` (
 
 INSERT INTO `registration` (`first_name`, `last_name`, `contact`, `email_id`, `house_name`, `street_name`, `district_name`, `state_name`, `pincode`, `date_of_birth`) VALUES
 ('Basil', 'k reji', '6238813582', 'basilkreji14@gmail.com', 'kuruttampurathu', 'pampakuda', 'Ernakulam', 'kerala', 686667, '2022-03-24'),
-('Benson', 'k reji', '7561866943', 'benson123@gmail.com', 'kuruttampurathu', 'pampakuda', 'Ernakulam', 'kerala', 686667, '2023-09-06');
+('Benson', 'k', '7561866943', 'benson123@gmail.com', 'kuruttampurathu', 'pampakuda', 'Ernakulam', 'Kerala', 686667, '2023-09-06');
 
 --
 -- Indexes for dumped tables
@@ -140,6 +159,12 @@ ALTER TABLE `login`
   ADD PRIMARY KEY (`email_id`);
 
 --
+-- Indexes for table `product`
+--
+ALTER TABLE `product`
+  ADD PRIMARY KEY (`product_id`);
+
+--
 -- Indexes for table `registration`
 --
 ALTER TABLE `registration`
@@ -153,13 +178,19 @@ ALTER TABLE `registration`
 -- AUTO_INCREMENT for table `complaint`
 --
 ALTER TABLE `complaint`
-  MODIFY `complaint_id` int(40) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `complaint_id` int(40) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `district`
 --
 ALTER TABLE `district`
   MODIFY `district_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
+-- AUTO_INCREMENT for table `product`
+--
+ALTER TABLE `product`
+  MODIFY `product_id` int(40) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

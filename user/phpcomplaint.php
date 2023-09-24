@@ -15,7 +15,7 @@ $title=$_POST['title'];
 $type=$_POST['type'];
 $description=$_POST['description'];
 $date = date("Y-m-d"); 
-$sql="INSERT INTO complaint(title,descreption,type,date,email_id,reply)values('$title','$description','$type','$date','$email','0')";
+$sql="INSERT INTO complaint(title,description,type,date,email_id,reply)values('$title','$description','$type','$date','$email','0')";
 insert_data($sql);
 ?>
 <script>

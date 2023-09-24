@@ -256,30 +256,12 @@ include("header.php");
                   <!-- Change Password Form -->
                   <form action="../php/passwordupdate.php" method="post">
 
-                    <div class="row mb-3">
-    <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Current Password</label>
-    <div class="col-md-8 col-lg-9">
-        <div class="input-group">
-            <input name="cpass" type="password" class="form-control" id="currentPassword">
-            <button class="btn btn-outline-secondary" type="button" id="togglePassword">
-                <i class="bi bi-eye"></i>
-            </button>
-        </div>
-    </div>
-</div>
-
-<script>
-    const passwordInput = document.getElementById("currentPassword");
-    const togglePasswordButton = document.getElementById("togglePassword");
-
-    togglePasswordButton.addEventListener("click", function () {
-        if (passwordInput.type === "password") {
-            passwordInput.type = "text";
-        } else {
-            passwordInput.type = "password";
-        }
-    });
-</script>
+                  <div class="row mb-3">
+                      <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">Current Password</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="cpass" type="password" class="form-control" id="currentPassword">
+                      </div>
+                    </div>
 
                     <div class="row mb-3">
                       <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">New Password</label>

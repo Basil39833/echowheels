@@ -53,7 +53,7 @@ include("header.php");
                 <option selected disabled>Select Type</option>
 
                 
-                  <option value="car">Car</option>
+                  <option value="scooter">Scooter</option>
                   <option value="servive">Service</option>
                   <option value="website">Website</option>
 
