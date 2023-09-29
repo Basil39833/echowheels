@@ -488,7 +488,7 @@ require("../connect.php");
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="./addproduct.php">
+            <a href="./addscooter.php">
               <i class="bi bi-circle"></i><span>Add products</span>
             </a>
           </li>
