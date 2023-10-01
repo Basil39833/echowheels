@@ -35,7 +35,7 @@ include("header.php");
           <div class="row">
 
             <!-- Sales Card -->
-            <div class="col-xxl-4 col-md-6">
+            <!--<div class="col-xxl-4 col-md-6">
               <div class="card info-card sales-card">
 
                 <div class="filter">
@@ -45,7 +45,7 @@ include("header.php");
                       <h6>Filter</h6>
                     </li>
 
-                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <!--<li><a class="dropdown-item" href="#">Today</a></li>
                     <li><a class="dropdown-item" href="#">This Month</a></li>
                     <li><a class="dropdown-item" href="#">This Year</a></li>
                   </ul>
@@ -70,7 +70,7 @@ include("header.php");
             </div><!-- End Sales Card -->
 
             <!-- Revenue Card -->
-            <div class="col-xxl-4 col-md-6">
+           <!-- <div class="col-xxl-4 col-md-6">
               <div class="card info-card revenue-card">
 
                 <div class="filter">
@@ -105,7 +105,7 @@ include("header.php");
             </div><!-- End Revenue Card -->
 
             <!-- Customers Card -->
-            <div class="col-xxl-4 col-xl-12">
+            <!--<div class="col-xxl-4 col-xl-12">
 
               <div class="card info-card customers-card">
 
@@ -142,7 +142,7 @@ include("header.php");
             </div><!-- End Customers Card -->
 
             <!-- Reports -->
-            <div class="col-12">
+            <!--<div class="col-12">
               <div class="card">
 
                 <div class="filter">
@@ -162,7 +162,7 @@ include("header.php");
                   <h5 class="card-title">Reports <span>/Today</span></h5>
 
                   <!-- Line Chart -->
-                  <div id="reportsChart"></div>
+                  <!--<div id="reportsChart"></div>
 
                   <script>
                     document.addEventListener("DOMContentLoaded", () => {
@@ -224,7 +224,7 @@ include("header.php");
             </div><!-- End Reports -->
 
             <!-- Recent Sales -->
-            <div class="col-12">
+            <!--<div class="col-12">
               <div class="card recent-sales overflow-auto">
 
                 <div class="filter">
@@ -298,7 +298,7 @@ include("header.php");
             </div><!-- End Recent Sales -->
 
             <!-- Top Selling -->
-            <div class="col-12">
+            <!--<div class="col-12">
               <div class="card top-selling overflow-auto">
 
                 <div class="filter">

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 24, 2023 at 09:27 AM
+-- Generation Time: Oct 01, 2023 at 11:52 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -36,6 +36,14 @@ CREATE TABLE `complaint` (
   `email_id` varchar(50) NOT NULL,
   `reply` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `complaint`
+--
+
+INSERT INTO `complaint` (`complaint_id`, `title`, `description`, `type`, `date`, `email_id`, `reply`) VALUES
+(14, 'scooter tire', 'scooters tire have to be changed ', 'scooter', '2023-10-01', 'benson123@gmail.com', '1'),
+(15, 'scooter service', 'scooter have to be serviced', 'servive', '2023-10-01', 'benson123@gmail.com', '1');
 
 -- --------------------------------------------------------
 
@@ -105,9 +113,19 @@ CREATE TABLE `product` (
   `scooter_brand` varchar(50) NOT NULL,
   `scooter_plate_number` varchar(50) NOT NULL,
   `color` varchar(50) NOT NULL,
+  `stock` varchar(50) NOT NULL,
   `description` varchar(50) NOT NULL,
   `amount` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`product_id`, `image`, `scooter_name`, `scooter_category`, `scooter_model_year`, `scooter_brand`, `scooter_plate_number`, `color`, `stock`, `description`, `amount`) VALUES
+(11, 's1proimage.jpeg', 's1 pro', 'Top', '2022', 'Echo', 'kl-17-2022', 'Mat Green', '5', 'well maintained', '200'),
+(12, 's1progen2image.png', 's1 progen2', 'Top', '2022', 'Echo', 'kl-17-2022', 'Black', '5', 'well maintained', '200'),
+(13, '450xgen3image.jpeg', '450X', 'Normal', '2022', 'Echo', 'kl-17-2022', 'Red', '5', 'well maintained', '200');
 
 -- --------------------------------------------------------
 
@@ -134,7 +152,7 @@ CREATE TABLE `registration` (
 
 INSERT INTO `registration` (`first_name`, `last_name`, `contact`, `email_id`, `house_name`, `street_name`, `district_name`, `state_name`, `pincode`, `date_of_birth`) VALUES
 ('Basil', 'k reji', '6238813582', 'basilkreji14@gmail.com', 'kuruttampurathu', 'pampakuda', 'Ernakulam', 'kerala', 686667, '2022-03-24'),
-('Benson', 'k', '7561866943', 'benson123@gmail.com', 'kuruttampurathu', 'pampakuda', 'Ernakulam', 'Kerala', 686667, '2023-09-06');
+('Benson', 'k   reji', '7561866943', 'benson123@gmail.com', 'kuruttampurathu', 'pampakuda', 'Ernakulam', 'Kerala', 686667, '2023-09-06');
 
 --
 -- Indexes for dumped tables
@@ -178,7 +196,7 @@ ALTER TABLE `registration`
 -- AUTO_INCREMENT for table `complaint`
 --
 ALTER TABLE `complaint`
-  MODIFY `complaint_id` int(40) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `complaint_id` int(40) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `district`
@@ -190,7 +208,7 @@ ALTER TABLE `district`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `product_id` int(40) NOT NULL AUTO_INCREMENT;
+  MODIFY `product_id` int(40) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

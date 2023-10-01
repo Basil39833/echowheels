@@ -244,7 +244,7 @@ require("../connect.php");
               <hr class="dropdown-divider">
             </li>
 
-            <li>
+            <!--<li>
               <a class="dropdown-item d-flex align-items-center" href="profile.php">
                 <i class="bi bi-gear"></i>
                 <span>Account Settings</span>
@@ -272,6 +272,10 @@ require("../connect.php");
             </li>
 
             <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
               <a class="dropdown-item d-flex align-items-center" href="#">
                 <i class="bi bi-trash"></i>
                 <span>Delete your account</span>
@@ -293,9 +297,9 @@ require("../connect.php");
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.php">
+        <a class="nav-link collapsed" href="viewscooter.php">
           <i class="bi bi-grid"></i>
-          <span>Dashboard</span>
+          <span>Home</span>
         </a>
       </li><!-- End Dashboard Nav 
 
@@ -490,16 +494,26 @@ require("../connect.php");
       <li class="nav-item">
         <a class="nav-link collapsed" href="pages-register.html">
           <i class="bi bi-card-list"></i>
-          <span>Booking</span>
+          <span>Booked Scooter</span>
         </a>
       </li><!-- End Register Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-login.html">
-        <i class="bi bi-envelope"></i>
-          <span>Notification</span>
-        </a>
-      </li><!-- End Login Page Nav -->
+      <li class="nav-item dropdown">
+
+<a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+  <i class="bi bi-chat-left-text"></i>
+  <span>Notifcation</span>
+  <span class="badge bg-success badge-number">2</span>
+</a><!-- End Messages Icon -->
+
+<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+  <li class="dropdown-header">
+    You have new messages
+    <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+  </li>
+</ul>
+      <li><!--end of notification --></li>    
+
 
       <li class="nav-item">
         <a class="nav-link collapsed" href=./contact.php>

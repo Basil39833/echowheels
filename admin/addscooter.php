@@ -16,12 +16,12 @@ include("header.php");
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Cars</h1>
+      <h1>Add Products</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-          <li class="breadcrumb-item">scooter</li>
-          <li class="breadcrumb-item active">Add Scooters</li>
+          <li class="breadcrumb-item"><a href="activeuser.php">Home</a></li>
+          <li class="breadcrumb-item">Products</li>
+          <li class="breadcrumb-item active">Add Products</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -125,6 +125,13 @@ include("header.php");
                   <label for="inputText" class="col-sm-2 col-form-label">Description</label>
                   <div class="col-sm-10">
                     <textarea class="form-control" style="height: 100px"  id="description" name="description" required=""></textarea>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="inputText" class="col-sm-2 col-form-label">Stock</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="stock" name="stock" required="">
                   </div>
                 </div>
                

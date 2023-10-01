@@ -270,6 +270,10 @@ require("../connect.php");
             </li>
 
             <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
               <a class="dropdown-item d-flex align-items-center" href="./passwordadmin.php">
                 <i class="bi bi-lock"></i>
                 <span>Change Password</span>
@@ -289,7 +293,7 @@ require("../connect.php");
 
     <ul class="sidebar-nav" id="sidebar-nav">
 
-      <li class="nav-item">
+      <!--<li class="nav-item">
         <a class="nav-link collapsed" href="index.php">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
@@ -466,7 +470,7 @@ require("../connect.php");
         </ul>
       </li><!-- End Icons Nav -->
 
-      <li class="nav-heading">Pages</li>
+      <!--<li class="nav-heading">Pages</li>-->
 
       <!--<li class="nav-item">
         <a class="nav-link collapsed" href="profile.php">
@@ -502,20 +506,20 @@ require("../connect.php");
 
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href=./contact.php>
-        <i class="bi bi-envelope"></i>
-          <span>Notifications</span>
+        <a class="nav-link collapsed" href=./viewscooter.php>
+        <i class="bi bi-card-list"></i>
+          <span>ViewScooter</span>
         </a>
       </li><!-- End Error 404 Page Nav -->
 
-      <!--<li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" href=./complaint.php>
           <i class="bi bi-envelope"></i>
-          <span>Complaint</span>
+          <span>Notification</span>
         </a>
-      </li><!-- End Contact Page Nav
+      </li><!-- End Contact Page Nav -->
 
-      <li class="nav-item">
+      <!--<li class="nav-item">
         <a class="nav-link collapsed" href="pages-error-404.html">
           <i class="bi bi-dash-circle"></i>
           <span>Error 404</span>

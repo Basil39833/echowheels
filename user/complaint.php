@@ -21,8 +21,8 @@ include("header.php");
     <h1>Complaints</h1>
     <nav>
       <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-          <li class="breadcrumb-item">Pages</li>
+      <li class="breadcrumb-item"><a href="viewscooter.php">Home</a></li>
+          
           <li class="breadcrumb-item active">Complaint</li>
       </ol>
     </nav>
@@ -49,7 +49,7 @@ include("header.php");
         <div class="col-md-6">
           <div class="col-md-12">
             <div class="form-floating mb-3">
-              <select class="form-select" id="" aria-label="State" name="type">
+              <select class="form-select" id="type" aria-label="State" name="type">
                 <option selected disabled>Select Type</option>
 
                 
